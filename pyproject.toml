@@ -13,6 +13,7 @@ license = { file = "LICENSE" }
 optional-dependencies = {dev = [
     "pytest>=6.0",
     "black",
-    "flake8"
+    "flake8",
+    "mypy"
     ]}
 urls = {project = "https://github.com/Indiwara65/python_packaging.git"}
