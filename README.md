@@ -71,14 +71,22 @@ mypackage/
     * Uses -      
         * Style Guide Enforcement: Ensures that your code adheres to PEP8, the Python style guide.
         * Code Quality: Identifies common errors in Python code, such as undefined names, unused imports, and other issues that could lead to bugs.    
-        * Complexity Checking: Reports on the complexity of your code, helping you identify functions that are too complex and need refactoring.
+        * Complexity Checking: Reports on the complexity of your code, helping you identify functions that are too complex and need refactoring.               
+        * To run flake8 - **flake8 path/to/file**            
+        * To check only a selected number of tests - **flake8 --select E12,E121 path/to/file** (only E12 and E121 will be checked)          
+        * To ignore tests - **flake8 --ignore E12,E121 path/to/file** (E12 and E121 will be ignored)                  
+        * Run all tests including default ignored tests - **flake8 --select path/to/file**                                        
+
 * **black**       
     * Uses -       
         * Code Formatting: Automatically formats your code to make it consistent. This removes the need for manual formatting and reduces the likelihood of style-related review comments.                    
         * Consistency: Ensures all team members' code looks the same, which makes reading and understanding code easier.          
-        * Time-Saving: Saves time during code reviews and reduces the mental load of formatting code manually  
+        * Time-Saving: Saves time during code reviews and reduces the mental load of formatting code manually  .               
+        * To run - **black path/to/file**                  
 * **mypy**         
     * Uses -     
         * Type Checking: Ensures that your code adheres to specified type hints, catching potential type errors during development rather than at runtime.
         * Documentation: Provides better documentation through type annotations, making it easier to understand what types of arguments a function expects and what it returns.
-        * Refactoring Safety: Helps in refactoring code by ensuring that changes do not introduce type inconsistencies.
+        * Refactoring Safety: Helps in refactoring code by ensuring that changes do not introduce type inconsistencies.               
+        * To run - **mypy path/to/file**               
+        
