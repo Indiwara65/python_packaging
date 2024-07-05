@@ -4,3 +4,4 @@ numpy
 pytest>=6.0
 black
 flake8
+mypy
