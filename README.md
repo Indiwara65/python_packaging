@@ -44,9 +44,15 @@ mypackage/
     * dynamic - dynamic metadata are allocated during the build time.     
 
 * mandotary fileds -             
-    * name, version        
+    * name, version
 * other fileds - 
-    * authors, urls, license, description, readme 
+    * authors, urls, license, description, readme
+* package can be installed in a python enviroment using the commands -          
+    * pip install .
+    * pip install -e .    (while developing so changes in the code will be reflected in the installed packages)
+    * pip install .[dev]  (install optional dependecies mentioned under dev)
+    * pip install .[docs]  (install optional dependecies mentioned under docs)
+    * pip install .[dev,docs]  (install optional dependecies mentioned under both dev and docs)
               
 
 # Testing            
