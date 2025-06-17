@@ -1,6 +1,6 @@
 from arithmatic_package import arithmatic
 import pytest
-
+#only functions starting with "test_" will be tested by pytest
 def test_add():
     assert arithmatic.add(10,5) == 15
     assert arithmatic.add(10.5,3.25) == 13.75
